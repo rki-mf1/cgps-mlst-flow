@@ -1,0 +1,4 @@
+indexed_scheme_dir:   "/path/to/cgMLST/indexed/schemes"
+scheme_name:          "Lmonocytogenes_1"  # example scheme name
+input_dir:            "/path/to/input/fasta/files/dir"
+publish_dir:          "/path/to/output/dir"

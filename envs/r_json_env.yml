@@ -1,0 +1,9 @@
+name: r_json_env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - r-base=4.3
+  - r-tidyverse
+  - r-jsonlite
+  - r-optparse
