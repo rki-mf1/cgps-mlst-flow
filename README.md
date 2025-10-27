@@ -14,7 +14,7 @@ To run the pipeline, provide the following arguments directly via command line o
 
 Example execution with parameters defined on the command line:
 ```bash
-nextflow run main.nf \
+nextflow run bajicv/cgps-mlst-flow \
     -profile singularity \
     --indexed_scheme_dir /path/to/indexed_schemes \
     --scheme_name mycobacterium_1 \
@@ -24,7 +24,7 @@ nextflow run main.nf \
 
 Example execution with parameters defined in the `params.yaml`:
 ```bash
-nextflow run main.nf \
+nextflow run bajicv/cgps-mlst-flow \
     -profile singularity \
     -params-file params.yaml
 ```

@@ -1,0 +1,94 @@
+Oct-27 17:46:21.100 [main] DEBUG nextflow.cli.Launcher - Setting HTTP proxy: ProxyConfig[protocol=http; host=sebiohome01.rki.local; port=8080]
+Oct-27 17:46:21.124 [main] DEBUG nextflow.cli.Launcher - Setting HTTPS proxy: ProxyConfig[protocol=https; host=sebiohome01.rki.local; port=8080]
+Oct-27 17:46:21.125 [main] DEBUG nextflow.cli.Launcher - Setting FTP proxy: ProxyConfig[protocol=ftp; host=sebiohome01.rki.local; port=8080]
+Oct-27 17:46:21.125 [main] DEBUG nextflow.cli.Launcher - Setting http proxy: ProxyConfig[protocol=http; host=sebiohome01.rki.local; port=8080]
+Oct-27 17:46:21.126 [main] DEBUG nextflow.cli.Launcher - Setting https proxy: ProxyConfig[protocol=https; host=sebiohome01.rki.local; port=8080]
+Oct-27 17:46:21.126 [main] DEBUG nextflow.cli.Launcher - Setting ftp proxy: ProxyConfig[protocol=ftp; host=sebiohome01.rki.local; port=8080]
+Oct-27 17:46:21.127 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile singularity -params-file tmp/params.yaml
+Oct-27 17:46:21.171 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.7
+Oct-27 17:46:21.195 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/bajicv/.nextflow/plugins; core-plugins: nf-amazon@2.15.0-patch1,nf-azure@1.16.0-patch1,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4-patch1,nf-wave@1.12.1
+Oct-27 17:46:21.226 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-27 17:46:21.228 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-27 17:46:21.231 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Oct-27 17:46:21.243 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-27 17:46:21.285 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /scratch/bajicv/projects/cgps-mlst-flow/nextflow.config
+Oct-27 17:46:21.289 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /scratch/bajicv/projects/cgps-mlst-flow/nextflow.config
+Oct-27 17:46:21.317 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/bajicv/.nextflow/secrets/store.json
+Oct-27 17:46:21.321 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@17d238b1] - activable => nextflow.secret.LocalSecretsProvider@17d238b1
+Oct-27 17:46:21.362 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Oct-27 17:46:21.855 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [mamba, conda, singularity, priority]
+Oct-27 17:46:21.892 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Oct-27 17:46:21.907 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [pedantic_noether] DSL2 - revision: 01378da86f
+Oct-27 17:46:21.909 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-27 17:46:21.909 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-27 17:46:21.959 [main] DEBUG nextflow.Session - Session UUID: f664b020-375b-4d17-941f-4d81d1269ca0
+Oct-27 17:46:21.960 [main] DEBUG nextflow.Session - Run name: pedantic_noether
+Oct-27 17:46:21.960 [main] DEBUG nextflow.Session - Executor pool size: 96
+Oct-27 17:46:21.968 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Oct-27 17:46:21.973 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=288; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-27 17:46:21.998 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.7 build 5955
+  Created: 08-09-2025 13:29 UTC (15:29 CEST)
+  System: Linux 5.15.0-138-generic
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 17.0.10-internal+0-adhoc..src
+  Encoding: UTF-8 (UTF-8)
+  Process: 732914@hpc-login02 [172.16.189.8]
+  CPUs: 96 - Mem: 251.3 GB (35.6 GB) - Swap: 2 GB (232 KB)
+Oct-27 17:46:22.038 [main] DEBUG nextflow.Session - Work-dir: /scratch/bajicv/projects/cgps-mlst-flow/work [nfs]
+Oct-27 17:46:22.055 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-27 17:46:22.066 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-27 17:46:22.071 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Oct-27 17:46:22.096 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-27 17:46:22.111 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 97; maxThreads: 1000
+Oct-27 17:46:22.184 [main] DEBUG nextflow.Session - Session start
+Oct-27 17:46:22.586 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-27 17:46:22.737 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-27 17:46:22.738 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-27 17:46:22.748 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Oct-27 17:46:22.755 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 20; pollInterval: 5s; dumpInterval: 5m 
+Oct-27 17:46:22.757 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: slurm)
+Oct-27 17:46:22.760 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Oct-27 17:46:22.788 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'CGPS_MLST': maxForks=0; fair=false; array=0
+Oct-27 17:46:22.848 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-27 17:46:22.848 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-27 17:46:22.851 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SUMMARIZE_JSONS': maxForks=0; fair=false; array=0
+Oct-27 17:46:22.855 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SUMMARIZE_JSONS, CGPS_MLST
+Oct-27 17:46:22.858 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Oct-27 17:46:22.864 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CGPS_MLST
+Oct-27 17:46:22.864 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SUMMARIZE_JSONS
+Oct-27 17:46:22.865 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_8be1ef659fc6e5b7: /scratch/bajicv/projects/cgps-mlst-flow/main.nf
+Oct-27 17:46:22.865 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-27 17:46:22.866 [main] DEBUG nextflow.Session - Session await
+Oct-27 17:46:22.868 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /scratch/bajicv/projects/cgps-mlst-flow/test_data/LIS/; pattern: *.{fna,fa,fasta}; options: [:]
+Oct-27 17:46:22.993 [Actor Thread 19] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=library://bajicv/pathogenwatch/mlst:v0.0.1; path=/scratch/bajicv/singularity/cache/bajicv-pathogenwatch-mlst-v0.0.1.img
+Oct-27 17:46:23.128 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409738) > jobId: 22300499; workDir: /scratch/bajicv/projects/cgps-mlst-flow/work/91/a4208c64567c5d96120f3b76a53272
+Oct-27 17:46:23.129 [Task submitter] INFO  nextflow.Session - [91/a4208c] Submitted process > CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409738)
+Oct-27 17:46:23.160 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409742) > jobId: 22300500; workDir: /scratch/bajicv/projects/cgps-mlst-flow/work/84/7f6552242957b0fd9fab5ea1d7b22b
+Oct-27 17:46:23.161 [Task submitter] INFO  nextflow.Session - [84/7f6552] Submitted process > CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409742)
+Oct-27 17:46:23.226 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409736) > jobId: 22300501; workDir: /scratch/bajicv/projects/cgps-mlst-flow/work/16/5e983bd833f589d159bcb2c4b2e973
+Oct-27 17:46:23.227 [Task submitter] INFO  nextflow.Session - [16/5e983b] Submitted process > CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409736)
+Oct-27 17:46:23.251 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409743) > jobId: 22300502; workDir: /scratch/bajicv/projects/cgps-mlst-flow/work/3b/f95ccc7660bec61ff592a6b907706d
+Oct-27 17:46:23.252 [Task submitter] INFO  nextflow.Session - [3b/f95ccc] Submitted process > CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409743)
+Oct-27 17:46:23.278 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409741) > jobId: 22300503; workDir: /scratch/bajicv/projects/cgps-mlst-flow/work/6b/2e6286a4d93055333c0042c958d7c6
+Oct-27 17:46:23.278 [Task submitter] INFO  nextflow.Session - [6b/2e6286] Submitted process > CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409741)
+Oct-27 17:46:57.769 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 22300499; id: 2; name: CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409738); status: COMPLETED; exit: 0; error: -; workDir: /scratch/bajicv/projects/cgps-mlst-flow/work/91/a4208c64567c5d96120f3b76a53272 started: 1761583587763; exited: 2025-10-27T16:46:38.170422Z; ]
+Oct-27 17:46:57.770 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=288; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-27 17:46:57.774 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 22300500; id: 5; name: CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409742); status: COMPLETED; exit: 0; error: -; workDir: /scratch/bajicv/projects/cgps-mlst-flow/work/84/7f6552242957b0fd9fab5ea1d7b22b started: 1761583587782; exited: 2025-10-27T16:46:37.822409Z; ]
+Oct-27 17:46:57.777 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 22300501; id: 3; name: CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409736); status: COMPLETED; exit: 0; error: -; workDir: /scratch/bajicv/projects/cgps-mlst-flow/work/16/5e983bd833f589d159bcb2c4b2e973 started: 1761583587785; exited: 2025-10-27T16:46:38.519331Z; ]
+Oct-27 17:46:57.780 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 22300502; id: 4; name: CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409743); status: COMPLETED; exit: 0; error: -; workDir: /scratch/bajicv/projects/cgps-mlst-flow/work/3b/f95ccc7660bec61ff592a6b907706d started: 1761583587786; exited: 2025-10-27T16:46:37.194435Z; ]
+Oct-27 17:46:57.784 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 22300503; id: 1; name: CGPS_MLST (Pathogenwatch (cg)MLST | Input: ERS409741); status: COMPLETED; exit: 0; error: -; workDir: /scratch/bajicv/projects/cgps-mlst-flow/work/6b/2e6286a4d93055333c0042c958d7c6 started: 1761583587787; exited: 2025-10-27T16:46:37.941793Z; ]
+Oct-27 17:46:57.812 [TaskFinalizer-3] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=288; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-27 17:46:57.851 [Actor Thread 36] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=library://bajicv/r/tidyverse-jsonlite-optparse:latest; path=/scratch/bajicv/singularity/cache/bajicv-r-tidyverse-jsonlite-optparse-latest.img
+Oct-27 17:46:57.886 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process SUMMARIZE_JSONS (Create summary profile tables) > jobId: 22300504; workDir: /scratch/bajicv/projects/cgps-mlst-flow/work/f2/3d82dc565a2fd19f71b73d6180b095
+Oct-27 17:46:57.887 [Task submitter] INFO  nextflow.Session - [f2/3d82dc] Submitted process > SUMMARIZE_JSONS (Create summary profile tables)
+Oct-27 17:47:02.769 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 22300504; id: 6; name: SUMMARIZE_JSONS (Create summary profile tables); status: COMPLETED; exit: 0; error: -; workDir: /scratch/bajicv/projects/cgps-mlst-flow/work/f2/3d82dc565a2fd19f71b73d6180b095 started: 1761583622766; exited: 2025-10-27T16:47:02.530091Z; ]
+Oct-27 17:47:02.786 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-27 17:47:07.766 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: slurm) - terminating tasks monitor poll loop
+Oct-27 17:47:07.767 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-27 17:47:07.771 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Oct-27 17:47:07.771 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Oct-27 17:47:07.778 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=6; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=2m 30s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=5; peakCpus=5; peakMemory=0; ]
+Oct-27 17:47:07.883 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-27 17:47:07.900 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Oct-27 17:47:07.900 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
