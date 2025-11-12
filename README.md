@@ -14,6 +14,7 @@ To run the pipeline, provide the following arguments directly via command line o
 Example execution with parameters defined on the command line:
 ```bash
 nextflow run rki-mf1/cgps-mlst-flow \
+    -r v1.0.0 \
     -profile singularity \
     --indexed_scheme_dir /path/to/indexed_schemes \
     --scheme_name mycobacterium_1 \
@@ -24,6 +25,7 @@ nextflow run rki-mf1/cgps-mlst-flow \
 Example execution with parameters defined in the `params.yaml`:
 ```bash
 nextflow run rki-mf1/cgps-mlst-flow \
+    -r v1.0.0 \
     -profile singularity \
     -params-file params.yaml
 ```
