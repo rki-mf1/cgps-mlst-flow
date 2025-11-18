@@ -39,7 +39,7 @@ The pipeline will output two sub-directories in defined `--out_dir`: `jsons` and
 2. `profile_summary` directory stores combined summary tables generated from all JSON files: 
    - `*_info.tsv` contains general information for each sample, including the sequence type (ST) and details about the (cg)MLST scheme used.
    - `*_profile.tsv` contains the (cg)MLST allele profiles for all samples, in which `0`'s indicate missing loci, known alleles are represented by their original numeric identifiers from the scheme, and novel alleles are represented by hash values.
-   - `*_profile_hased.tsv` is similar to `_profile.tsv`, but **all** alleles (both known and novel) are represented by **hashes**.
+   - `*_profile_hashed.tsv` is similar to `_profile.tsv`, but **all** alleles (both known and novel) are represented by **hashes**.
 
 
 ## Credits
