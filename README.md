@@ -3,6 +3,8 @@
 CGPS-MLST-Flow is a Nextflow wrapper for [CGPS (cg)MLST](https://github.com/pathogenwatch-oss/mlst). 
 
 
+<p align="center"><picture><img src="assets/CGPS-MLST-Flow.svg" alt="GARI"></picture></p>
+
 ## Usage
 
 To run the pipeline, provide the following arguments directly via command line or in `params.yaml` file:
